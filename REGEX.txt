@@ -1,0 +1,9 @@
+﻿SMARTENUM
+match: InnerEnum\.(\w+)\, 
+replace: 
+
+match: StyleParserCS.css.
+replace: nameof(
+
+match: InnerEnum\.(\w+):
+replace: $1):
