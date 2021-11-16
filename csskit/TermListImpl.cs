@@ -175,7 +175,9 @@ namespace StyleParserCS.csskit
         {
             try
             {
-                return (TermList)Clone();
+                // return (TermList)Clone();
+                // tocheck!
+                return (TermList)MemberwiseClone();
             }
             catch (Exception e)
             {

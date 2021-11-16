@@ -127,18 +127,14 @@ namespace StyleParserCS.csskit
         {
             try
             {
-                return (Term<T>)Clone();
+                // return (Term<T>)Clone();
+                // tocheck!
+                return (Term<T>)MemberwiseClone();
             }
             catch (Exception e)
             {
-                throw;
+                throw new Exception(e.Message);
             }
-        }
-
-        public object Clone()
-        {
-            // TODO throw new NotImplementedException();
-            return null;
         }
 
 

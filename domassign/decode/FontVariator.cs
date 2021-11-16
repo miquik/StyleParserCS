@@ -166,7 +166,9 @@ namespace StyleParserCS.domassign.decode
                             }
                             else
                             {
-                                sb.Append(((TermString)t).Value);
+                                // sb.Append(((TermString)t).Value);
+                                // tocheck
+                                sb.Append(((TermIdent)t).Value);
                             }
                         }
                         // invalid term

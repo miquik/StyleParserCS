@@ -16,7 +16,7 @@ namespace StyleParserCS.css
     }
 
 
-    public interface Term<T> : ICloneable, Term
+    public interface Term<T>: Term
     {
         /// <summary>
         /// This operator is between terms in value part of CSS declaration.
@@ -54,6 +54,7 @@ namespace StyleParserCS.css
         /// <returns> Modified object to allow chaining </returns>
         new Term<T> setOperator(Term_Operator op);
 
+        // https://www.geeksforgeeks.org/shallow-copy-and-deep-copy-in-c-sharp/
         new Term<T> shallowClone();
     }
 

@@ -177,7 +177,9 @@ namespace StyleParserCS.csskit
         {
             try
             {
-                return (TermBracketedIdents)Clone();
+                // return (TermBracketedIdents)Clone();
+                // tocheck!
+                return (TermBracketedIdents)MemberwiseClone();
             }
             catch (Exception e)
             {
